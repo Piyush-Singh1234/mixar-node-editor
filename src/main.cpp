@@ -14,6 +14,7 @@
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
 #include "BlurNode.h"
+#include "ThresholdNode.h"
 #include "SharpenNode.h"
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
@@ -87,7 +88,10 @@ int main() {
                 }
                 if (ImGui::MenuItem("Sharpen Node")) {
                     nodes.push_back(std::make_unique<SharpenNode>(id_counter++));
-                }                
+                }              
+                if (ImGui::MenuItem("Threshold Node")) {
+                    nodes.push_back(std::make_unique<ThresholdNode>(id_counter++));
+                }   
                 if (ImGui::MenuItem("Contrast Node")) {
                     nodes.push_back(std::make_unique<ContrastNode>(id_counter++));
                 }                
