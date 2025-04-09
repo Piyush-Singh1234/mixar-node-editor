@@ -14,6 +14,7 @@
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
 #include "BlurNode.h"
+#include "RotateNode.h"
 #include "ThresholdNode.h"
 #include "SharpenNode.h"
 #include "BrightnessNode.h"
@@ -89,6 +90,9 @@ int main() {
                 if (ImGui::MenuItem("Sharpen Node")) {
                     nodes.push_back(std::make_unique<SharpenNode>(id_counter++));
                 }              
+                if (ImGui::MenuItem("Rotate Node")) {
+                    nodes.push_back(std::make_unique<RotateNode>(id_counter++));
+                }  
                 if (ImGui::MenuItem("Threshold Node")) {
                     nodes.push_back(std::make_unique<ThresholdNode>(id_counter++));
                 }   

@@ -513,6 +513,30 @@ src/NodeGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s
 .PHONY : src/NodeGraph.cpp.s
 
+src/RotateNode.o: src/RotateNode.cpp.o
+.PHONY : src/RotateNode.o
+
+# target to build an object file
+src/RotateNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o
+.PHONY : src/RotateNode.cpp.o
+
+src/RotateNode.i: src/RotateNode.cpp.i
+.PHONY : src/RotateNode.i
+
+# target to preprocess a source file
+src/RotateNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.i
+.PHONY : src/RotateNode.cpp.i
+
+src/RotateNode.s: src/RotateNode.cpp.s
+.PHONY : src/RotateNode.s
+
+# target to generate assembly for a file
+src/RotateNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.s
+.PHONY : src/RotateNode.cpp.s
+
 src/SharpenNode.o: src/SharpenNode.cpp.o
 .PHONY : src/SharpenNode.o
 
@@ -642,6 +666,9 @@ help:
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"
+	@echo "... src/RotateNode.o"
+	@echo "... src/RotateNode.i"
+	@echo "... src/RotateNode.s"
 	@echo "... src/SharpenNode.o"
 	@echo "... src/SharpenNode.i"
 	@echo "... src/SharpenNode.s"
