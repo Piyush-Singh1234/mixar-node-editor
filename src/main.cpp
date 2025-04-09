@@ -14,6 +14,7 @@
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
 #include "BlurNode.h"
+#include "SharpenNode.h"
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
 #include "InvertNode.h"
@@ -84,6 +85,9 @@ int main() {
                 if (ImGui::MenuItem("Grayscale Node")) {
                     nodes.push_back(std::make_unique<GrayscaleNode>(id_counter++));
                 }
+                if (ImGui::MenuItem("Sharpen Node")) {
+                    nodes.push_back(std::make_unique<SharpenNode>(id_counter++));
+                }                
                 if (ImGui::MenuItem("Contrast Node")) {
                     nodes.push_back(std::make_unique<ContrastNode>(id_counter++));
                 }                

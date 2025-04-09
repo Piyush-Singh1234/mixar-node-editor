@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o.d"
+  "CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o"
+  "CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/main.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/main.cpp.o.d"
   "NodeEditor"

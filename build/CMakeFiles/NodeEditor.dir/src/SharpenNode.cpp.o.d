@@ -1,35 +1,8 @@
-CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
- /home/piyush/mixar-node-editor/mixar-node-editor/src/main.cpp \
+CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o: \
+ /home/piyush/mixar-node-editor/mixar-node-editor/src/SharpenNode.cpp \
  /usr/include/stdc-predef.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/timesize.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_glfw.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_opengl3.h \
- /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/SharpenNode.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -37,10 +10,28 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /usr/include/opencv4/opencv2/core/version.hpp /usr/include/c++/13/limits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/opencv4/opencv2/core/hal/interface.h \
- /usr/include/c++/13/cstddef /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/cstddef \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
@@ -51,6 +42,8 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
@@ -111,13 +104,15 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/opencv4/opencv2/core/cvstd.hpp /usr/include/c++/13/cstring \
- /usr/include/c++/13/cctype /usr/include/ctype.h \
- /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/cctype \
+ /usr/include/ctype.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
- /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
@@ -212,13 +207,14 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/opencv4/opencv2/core/neon_utils.hpp \
- /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp /usr/include/assert.h \
  /usr/include/opencv4/opencv2/core/check.hpp \
  /usr/include/opencv4/opencv2/core/traits.hpp \
  /usr/include/opencv4/opencv2/core/matx.hpp \
  /usr/include/opencv4/opencv2/core/saturate.hpp \
  /usr/include/opencv4/opencv2/core/fast_math.hpp \
  /usr/include/opencv4/opencv2/core/types.hpp /usr/include/c++/13/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
@@ -358,12 +354,6 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/ImageInputNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/GrayscaleNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/BlurNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/SharpenNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/BrightnessNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/ContrastNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/InvertNode.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/ImageOutputNode.h
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.h

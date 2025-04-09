@@ -513,6 +513,30 @@ src/NodeGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s
 .PHONY : src/NodeGraph.cpp.s
 
+src/SharpenNode.o: src/SharpenNode.cpp.o
+.PHONY : src/SharpenNode.o
+
+# target to build an object file
+src/SharpenNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o
+.PHONY : src/SharpenNode.cpp.o
+
+src/SharpenNode.i: src/SharpenNode.cpp.i
+.PHONY : src/SharpenNode.i
+
+# target to preprocess a source file
+src/SharpenNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.i
+.PHONY : src/SharpenNode.cpp.i
+
+src/SharpenNode.s: src/SharpenNode.cpp.s
+.PHONY : src/SharpenNode.s
+
+# target to generate assembly for a file
+src/SharpenNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.s
+.PHONY : src/SharpenNode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -594,6 +618,9 @@ help:
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"
+	@echo "... src/SharpenNode.o"
+	@echo "... src/SharpenNode.i"
+	@echo "... src/SharpenNode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
