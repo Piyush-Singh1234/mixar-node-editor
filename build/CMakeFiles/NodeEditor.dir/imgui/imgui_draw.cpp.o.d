@@ -1,7 +1,8 @@
 CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: \
- /home/piyush/mixar-node-editor/imgui/imgui_draw.cpp \
- /usr/include/stdc-predef.h /home/piyush/mixar-node-editor/imgui/imgui.h \
- /home/piyush/mixar-node-editor/imgui/imconfig.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_draw.cpp \
+ /usr/include/stdc-predef.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
@@ -16,7 +17,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/piyush/mixar-node-editor/imgui/imgui_internal.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -202,5 +203,5 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/keylockerintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h \
- /home/piyush/mixar-node-editor/imgui/imstb_rectpack.h \
- /home/piyush/mixar-node-editor/imgui/imstb_truetype.h
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imstb_rectpack.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imstb_truetype.h

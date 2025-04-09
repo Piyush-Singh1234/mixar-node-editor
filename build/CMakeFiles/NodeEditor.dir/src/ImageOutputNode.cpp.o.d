@@ -1,8 +1,8 @@
 CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o: \
- /home/piyush/mixar-node-editor/src/ImageOutputNode.cpp \
+ /home/piyush/mixar-node-editor/mixar-node-editor/src/ImageOutputNode.cpp \
  /usr/include/stdc-predef.h \
- /home/piyush/mixar-node-editor/include/ImageOutputNode.h \
- /home/piyush/mixar-node-editor/include/Node.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/ImageOutputNode.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -354,7 +354,8 @@ CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/piyush/mixar-node-editor/imgui/imgui.h \
- /home/piyush/mixar-node-editor/imgui/imconfig.h \
- /home/piyush/mixar-node-editor/imnodes/imnodes.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/include/KHR/khrplatform.h

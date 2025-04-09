@@ -1,7 +1,8 @@
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o: \
- /home/piyush/mixar-node-editor/imgui/backends/imgui_impl_glfw.cpp \
- /usr/include/stdc-predef.h /home/piyush/mixar-node-editor/imgui/imgui.h \
- /home/piyush/mixar-node-editor/imgui/imconfig.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_glfw.cpp \
+ /usr/include/stdc-predef.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
@@ -16,7 +17,7 @@ CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/piyush/mixar-node-editor/imgui/backends/imgui_impl_glfw.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_glfw.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \

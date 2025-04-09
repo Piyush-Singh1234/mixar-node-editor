@@ -1,7 +1,7 @@
-CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.o: \
- /home/piyush/mixar-node-editor/mixar-node-editor/src/BrightnessNode.cpp \
+CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o: \
+ /home/piyush/mixar-node-editor/mixar-node-editor/src/InvertNode.cpp \
  /usr/include/stdc-predef.h \
- /home/piyush/mixar-node-editor/mixar-node-editor/include/BrightnessNode.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/InvertNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \

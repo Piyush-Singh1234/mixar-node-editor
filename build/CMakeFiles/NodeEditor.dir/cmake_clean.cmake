@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o.d"
+  "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o"
+  "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/main.cpp.o"

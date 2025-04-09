@@ -1,7 +1,7 @@
 CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o: \
- /home/piyush/mixar-node-editor/src/NodeGraph.cpp \
+ /home/piyush/mixar-node-editor/mixar-node-editor/src/NodeGraph.cpp \
  /usr/include/stdc-predef.h \
- /home/piyush/mixar-node-editor/include/NodeGraph.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/NodeGraph.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,7 +123,7 @@ CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/piyush/mixar-node-editor/include/Node.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

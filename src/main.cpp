@@ -16,6 +16,7 @@
 #include "BlurNode.h"
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
+#include "InvertNode.h"
 #include "ImageOutputNode.h"
 
 // Optional: C++ std includes
@@ -77,6 +78,9 @@ int main() {
         // Add Node Menu
         if (ImGui::BeginMenuBar()) {
             if (ImGui::BeginMenu("Add Node")) {
+                if (ImGui::MenuItem("Invert Node")) {
+                    nodes.push_back(std::make_unique<InvertNode>(id_counter++));
+                }                
                 if (ImGui::MenuItem("Grayscale Node")) {
                     nodes.push_back(std::make_unique<GrayscaleNode>(id_counter++));
                 }

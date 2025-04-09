@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/piyush/mixar-node-editor
+CMAKE_SOURCE_DIR = /home/piyush/mixar-node-editor/mixar-node-editor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/piyush/mixar-node-editor/build
+CMAKE_BINARY_DIR = /home/piyush/mixar-node-editor/mixar-node-editor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyush/mixar-node-editor/build/CMakeFiles /home/piyush/mixar-node-editor/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles /home/piyush/mixar-node-editor/mixar-node-editor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyush/mixar-node-editor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -465,6 +465,30 @@ src/ImageOutputNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.s
 .PHONY : src/ImageOutputNode.cpp.s
 
+src/InvertNode.o: src/InvertNode.cpp.o
+.PHONY : src/InvertNode.o
+
+# target to build an object file
+src/InvertNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o
+.PHONY : src/InvertNode.cpp.o
+
+src/InvertNode.i: src/InvertNode.cpp.i
+.PHONY : src/InvertNode.i
+
+# target to preprocess a source file
+src/InvertNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.i
+.PHONY : src/InvertNode.cpp.i
+
+src/InvertNode.s: src/InvertNode.cpp.s
+.PHONY : src/InvertNode.s
+
+# target to generate assembly for a file
+src/InvertNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.s
+.PHONY : src/InvertNode.cpp.s
+
 src/NodeGraph.o: src/NodeGraph.cpp.o
 .PHONY : src/NodeGraph.o
 
@@ -564,6 +588,9 @@ help:
 	@echo "... src/ImageOutputNode.o"
 	@echo "... src/ImageOutputNode.i"
 	@echo "... src/ImageOutputNode.s"
+	@echo "... src/InvertNode.o"
+	@echo "... src/InvertNode.i"
+	@echo "... src/InvertNode.s"
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"

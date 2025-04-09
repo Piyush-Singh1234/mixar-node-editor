@@ -1,7 +1,8 @@
 CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o: \
- /home/piyush/mixar-node-editor/imgui/imgui_demo.cpp \
- /usr/include/stdc-predef.h /home/piyush/mixar-node-editor/imgui/imgui.h \
- /home/piyush/mixar-node-editor/imgui/imconfig.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_demo.cpp \
+ /usr/include/stdc-predef.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
