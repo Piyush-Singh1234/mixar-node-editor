@@ -20,6 +20,7 @@
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
 #include "ColorChannelSplitterNode.h"
+#include "ColorChannelMergerNode.h"
 #include "InvertNode.h"
 #include "ImageOutputNode.h"
 
@@ -97,6 +98,9 @@ int main() {
                 if (ImGui::MenuItem("Color Channel Splitter")) {
                     nodes.push_back(std::make_unique<ColorChannelSplitterNode>(id_counter++));
                 } 
+                if (ImGui::MenuItem("Color Channel Merger")) {
+                    nodes.push_back(std::make_unique<ColorChannelMergerNode>(id_counter++));
+                }                
                 if (ImGui::MenuItem("Threshold Node")) {
                     nodes.push_back(std::make_unique<ThresholdNode>(id_counter++));
                 }   
@@ -171,24 +175,36 @@ int main() {
             int inputAttr = node->getInputAttr();
             int outputAttr = node->getOutputAttr();
 
-            std::vector<cv::Mat> inputs;
+            // std::vector<cv::Mat> inputs;
 
-            // if this node has a connected input
-            if (inputToOutputMap.count(inputAttr)) {
-                int sourceOutputAttr = inputToOutputMap[inputAttr];
-                if (attributeOutputs.count(sourceOutputAttr)) {
-                    inputs.push_back(attributeOutputs[sourceOutputAttr]);
+            // // if this node has a connected input
+            // if (inputToOutputMap.count(inputAttr)) {
+            //     int sourceOutputAttr = inputToOutputMap[inputAttr];
+            //     if (attributeOutputs.count(sourceOutputAttr)) {
+            //         inputs.push_back(attributeOutputs[sourceOutputAttr]);
+            //     }
+            // }
+            std::vector<cv::Mat> inputs;
+            for (const auto& [inputAttr, sourceOutputAttr] : inputToOutputMap) {
+                if (node->getInputAttr() == inputAttr || inputAttr / 10 == node->id) {
+                    if (attributeOutputs.count(sourceOutputAttr)) {
+                        inputs.push_back(attributeOutputs[sourceOutputAttr]);
+                    }
                 }
             }
 
+
             // 🔧 Special case for ChannelSplitterNode
             if (auto* splitter = dynamic_cast<ColorChannelSplitterNode*>(node.get())) {
-                splitter->process(inputs);
-                attributeOutputs[splitter->getOutputAttrR()] = splitter->r;
-                attributeOutputs[splitter->getOutputAttrG()] = splitter->g;
-                attributeOutputs[splitter->getOutputAttrB()] = splitter->b;
+                auto channels = splitter->getChannelOutputs(inputs);
+                if (channels.size() >= 3) {
+                    attributeOutputs[node->id * 10 + 2] = channels[0];  // Red
+                    attributeOutputs[node->id * 10 + 3] = channels[1];  // Green
+                    attributeOutputs[node->id * 10 + 4] = channels[2];  // Blue
+                }
                 continue;
             }
+            
 
             // 🚀 Process node
             cv::Mat output = node->process(inputs);
