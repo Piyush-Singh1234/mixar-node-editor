@@ -609,6 +609,30 @@ src/NodeGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s
 .PHONY : src/NodeGraph.cpp.s
 
+src/NoiseGenerationNode.o: src/NoiseGenerationNode.cpp.o
+.PHONY : src/NoiseGenerationNode.o
+
+# target to build an object file
+src/NoiseGenerationNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o
+.PHONY : src/NoiseGenerationNode.cpp.o
+
+src/NoiseGenerationNode.i: src/NoiseGenerationNode.cpp.i
+.PHONY : src/NoiseGenerationNode.i
+
+# target to preprocess a source file
+src/NoiseGenerationNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.i
+.PHONY : src/NoiseGenerationNode.cpp.i
+
+src/NoiseGenerationNode.s: src/NoiseGenerationNode.cpp.s
+.PHONY : src/NoiseGenerationNode.s
+
+# target to generate assembly for a file
+src/NoiseGenerationNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.s
+.PHONY : src/NoiseGenerationNode.cpp.s
+
 src/RotateNode.o: src/RotateNode.cpp.o
 .PHONY : src/RotateNode.o
 
@@ -774,6 +798,9 @@ help:
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"
+	@echo "... src/NoiseGenerationNode.o"
+	@echo "... src/NoiseGenerationNode.i"
+	@echo "... src/NoiseGenerationNode.s"
 	@echo "... src/RotateNode.o"
 	@echo "... src/RotateNode.i"
 	@echo "... src/RotateNode.s"

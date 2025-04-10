@@ -13,6 +13,7 @@
 // Node system headers
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
+#include "NoiseGenerationNode.h"
 #include "BlurNode.h"
 #include "BlendNode.h"
 #include "RotateNode.h"
@@ -91,6 +92,9 @@ int main() {
                 if (ImGui::MenuItem("Invert Node")) {
                     nodes.push_back(std::make_unique<InvertNode>(id_counter++));
                 }  
+                if (ImGui::MenuItem("Noise Generation Node")) {
+                    nodes.push_back(std::make_unique<NoiseGenerationNode>(id_counter++));
+                }                                
                 if (ImGui::MenuItem("Blend Node")) {
                     nodes.push_back(std::make_unique<BlendNode>(id_counter++));
                 }               

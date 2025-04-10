@@ -2,22 +2,35 @@
 #include "Node.h"
 #include <opencv2/opencv.hpp>
 
-// Select noise type
-enum class NoiseType {
-    Perlin = 0,
-    Simplex,
-    Worley
-};
-
 class NoiseGenerationNode : public Node {
 public:
-    NoiseType noiseType = NoiseType::Perlin;
-    float scale = 1.0f;         // Frequency scale factor
-    int octaves = 1;            // Number of octaves for fractal noise
-    float persistence = 0.5f;   // Controls amplitude of octaves
-    bool useAsDisplacement = false; // If true, output remains grayscale (for displacement)
+    enum class NoiseType {
+        Perlin,
+        Simplex,
+        Worley
+    };
 
-    explicit NoiseGenerationNode(int id_);
+    enum class OutputType {
+        Color,
+        Displacement
+    };
+
+    explicit NoiseGenerationNode(int id);
     void render() override;
     cv::Mat process(const std::vector<cv::Mat>& inputs) override;
+
+private:
+    int selected = 0;
+    int outputSelected = 0;
+    float scale;
+    int octaves;
+    float persistence;
+    int width;
+    int height;
+    NoiseType noiseType;
+    OutputType outputType;
+
+    void generatePerlinNoise(cv::Mat& output, const cv::Size& size);
+    void generateSimplexNoise(cv::Mat& output, const cv::Size& size);
+    void generateWorleyNoise(cv::Mat& output, const cv::Size& size);
 };

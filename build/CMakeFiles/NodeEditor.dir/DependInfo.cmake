@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ImageOutputNode.cpp" "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/InvertNode.cpp" "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/NodeGraph.cpp" "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o.d"
+  "/home/piyush/mixar-node-editor/mixar-node-editor/src/NoiseGenerationNode.cpp" "CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/RotateNode.cpp" "CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/SharpenNode.cpp" "CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ThresholdNode.cpp" "CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o.d"
