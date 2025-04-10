@@ -52,4 +52,3 @@ target_link_libraries(NodeEditor
     OpenGL::GL
     dl
 )
-

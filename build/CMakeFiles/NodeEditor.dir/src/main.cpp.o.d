@@ -362,6 +362,7 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/Node.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/GrayscaleNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/BlurNode.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/BlendNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/RotateNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/EdgeDetectionNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/ThresholdNode.h \

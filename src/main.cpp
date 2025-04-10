@@ -14,6 +14,7 @@
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
 #include "BlurNode.h"
+#include "BlendNode.h"
 #include "RotateNode.h"
 #include "EdgeDetectionNode.h"
 #include "ThresholdNode.h"
@@ -84,9 +85,15 @@ int main() {
         // Add Node Menu
         if (ImGui::BeginMenuBar()) {
             if (ImGui::BeginMenu("Add Node")) {
+                if (ImGui::MenuItem("Image Input Node")) {
+                    nodes.push_back(std::make_unique<ImageInputNode>(id_counter++));
+                }                
                 if (ImGui::MenuItem("Invert Node")) {
                     nodes.push_back(std::make_unique<InvertNode>(id_counter++));
-                }                
+                }  
+                if (ImGui::MenuItem("Blend Node")) {
+                    nodes.push_back(std::make_unique<BlendNode>(id_counter++));
+                }               
                 if (ImGui::MenuItem("Grayscale Node")) {
                     nodes.push_back(std::make_unique<GrayscaleNode>(id_counter++));
                 }
@@ -164,61 +171,64 @@ int main() {
             links.emplace_back(start_attr, end_attr);
             std::cout << "Link created: " << start_attr << " ➝ " << end_attr << "\n";
         }
-
-        // 🔁 1. Build map of input ➝ output
+        // Build a map of destination attribute → source attribute based on detected links
         std::unordered_map<int, int> inputToOutputMap;
         for (const auto& link : links) {
             inputToOutputMap[link.second] = link.first;
         }
 
-        // 📦 2. Store image outputs from each node
+        // A map to store node outputs keyed by the node's output attribute
         std::unordered_map<int, cv::Mat> attributeOutputs;
 
-        // 🧠 3. Evaluate each node based on links
+        // Process each node in the graph
         for (auto& node : nodes) {
-            int inputAttr = node->getInputAttr();
-            int outputAttr = node->getOutputAttr();
-
-            // std::vector<cv::Mat> inputs;
-
-            // // if this node has a connected input
-            // if (inputToOutputMap.count(inputAttr)) {
-            //     int sourceOutputAttr = inputToOutputMap[inputAttr];
-            //     if (attributeOutputs.count(sourceOutputAttr)) {
-            //         inputs.push_back(attributeOutputs[sourceOutputAttr]);
-            //     }
-            // }
             std::vector<cv::Mat> inputs;
-            for (const auto& [inputAttr, sourceOutputAttr] : inputToOutputMap) {
-                if (node->getInputAttr() == inputAttr || inputAttr / 10 == node->id) {
-                    if (attributeOutputs.count(sourceOutputAttr)) {
-                        inputs.push_back(attributeOutputs[sourceOutputAttr]);
+
+            // Check if the node is a BlendNode (which needs two separate inputs)
+            if (BlendNode* blend = dynamic_cast<BlendNode*>(node.get())) {
+                // First input attribute is: id * 10 + 1
+                int inAttr1 = blend->id * 10 + 1;
+                // Second input attribute is: id * 10 + 2
+                int inAttr2 = blend->id * 10 + 2;
+
+                // For first input, if there's a link then collect the source image
+                if (inputToOutputMap.count(inAttr1)) {
+                    int srcAttr = inputToOutputMap[inAttr1];
+                    if (attributeOutputs.count(srcAttr)) {
+                        inputs.push_back(attributeOutputs[srcAttr]);
+                    }
+                }
+                // For second input, if there's a link then collect the source image
+                if (inputToOutputMap.count(inAttr2)) {
+                    int srcAttr = inputToOutputMap[inAttr2];
+                    if (attributeOutputs.count(srcAttr)) {
+                        inputs.push_back(attributeOutputs[srcAttr]);
+                    }
+                }
+            } else {
+                // For regular nodes expecting one input:
+                int inAttr = node->getInputAttr();
+                if (inputToOutputMap.count(inAttr)) {
+                    int srcAttr = inputToOutputMap[inAttr];
+                    if (attributeOutputs.count(srcAttr)) {
+                        inputs.push_back(attributeOutputs[srcAttr]);
                     }
                 }
             }
 
-
-            // 🔧 Special case for ChannelSplitterNode
-            if (auto* splitter = dynamic_cast<ColorChannelSplitterNode*>(node.get())) {
-                auto channels = splitter->getChannelOutputs(inputs);
-                if (channels.size() >= 3) {
-                    attributeOutputs[node->id * 10 + 2] = channels[0];  // Red
-                    attributeOutputs[node->id * 10 + 3] = channels[1];  // Green
-                    attributeOutputs[node->id * 10 + 4] = channels[2];  // Blue
-                }
-                continue;
-            }
+            // Process the node only if we have some valid inputs (or let the node handle empty vector)
+            cv::Mat outImage = node->process(inputs);
             
+            // Debug print: you can print node id and whether it got any inputs
+            std::cout << "[Graph] Processing node ID: " << node->id 
+                    << " | Inputs: " << (inputs.empty() ? "none" : std::to_string(inputs.size()))
+                    << "\n";
 
-            // 🚀 Process node
-            cv::Mat output = node->process(inputs);
-            std::cout << "[Graph] Processing node ID: " << node->id
-            << " | Inputs: " << (inputs.empty() ? "none" : "yes") << "\n";
-
-
-            // 💾 Save output for next connected node
-            attributeOutputs[outputAttr] = output;
+            // Store the output image in the map using the node's output attribute
+            int outAttr = node->getOutputAttr();
+            attributeOutputs[outAttr] = outImage;
         }
+
 
         // Render to screen
         ImGui::Render();

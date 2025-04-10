@@ -321,6 +321,30 @@ imnodes/imnodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.s
 .PHONY : imnodes/imnodes.cpp.s
 
+src/BlendNode.o: src/BlendNode.cpp.o
+.PHONY : src/BlendNode.o
+
+# target to build an object file
+src/BlendNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/BlendNode.cpp.o
+.PHONY : src/BlendNode.cpp.o
+
+src/BlendNode.i: src/BlendNode.cpp.i
+.PHONY : src/BlendNode.i
+
+# target to preprocess a source file
+src/BlendNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/BlendNode.cpp.i
+.PHONY : src/BlendNode.cpp.i
+
+src/BlendNode.s: src/BlendNode.cpp.s
+.PHONY : src/BlendNode.s
+
+# target to generate assembly for a file
+src/BlendNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/BlendNode.cpp.s
+.PHONY : src/BlendNode.cpp.s
+
 src/BlurNode.o: src/BlurNode.cpp.o
 .PHONY : src/BlurNode.o
 
@@ -585,29 +609,29 @@ src/NodeGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s
 .PHONY : src/NodeGraph.cpp.s
 
-src/RotatNode.o: src/RotatNode.cpp.o
-.PHONY : src/RotatNode.o
+src/RotateNode.o: src/RotateNode.cpp.o
+.PHONY : src/RotateNode.o
 
 # target to build an object file
-src/RotatNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.o
-.PHONY : src/RotatNode.cpp.o
+src/RotateNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o
+.PHONY : src/RotateNode.cpp.o
 
-src/RotatNode.i: src/RotatNode.cpp.i
-.PHONY : src/RotatNode.i
+src/RotateNode.i: src/RotateNode.cpp.i
+.PHONY : src/RotateNode.i
 
 # target to preprocess a source file
-src/RotatNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.i
-.PHONY : src/RotatNode.cpp.i
+src/RotateNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.i
+.PHONY : src/RotateNode.cpp.i
 
-src/RotatNode.s: src/RotatNode.cpp.s
-.PHONY : src/RotatNode.s
+src/RotateNode.s: src/RotateNode.cpp.s
+.PHONY : src/RotateNode.s
 
 # target to generate assembly for a file
-src/RotatNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.s
-.PHONY : src/RotatNode.cpp.s
+src/RotateNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.s
+.PHONY : src/RotateNode.cpp.s
 
 src/SharpenNode.o: src/SharpenNode.cpp.o
 .PHONY : src/SharpenNode.o
@@ -714,6 +738,9 @@ help:
 	@echo "... imnodes/imnodes.o"
 	@echo "... imnodes/imnodes.i"
 	@echo "... imnodes/imnodes.s"
+	@echo "... src/BlendNode.o"
+	@echo "... src/BlendNode.i"
+	@echo "... src/BlendNode.s"
 	@echo "... src/BlurNode.o"
 	@echo "... src/BlurNode.i"
 	@echo "... src/BlurNode.s"
@@ -747,9 +774,9 @@ help:
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"
-	@echo "... src/RotatNode.o"
-	@echo "... src/RotatNode.i"
-	@echo "... src/RotatNode.s"
+	@echo "... src/RotateNode.o"
+	@echo "... src/RotateNode.i"
+	@echo "... src/RotateNode.s"
 	@echo "... src/SharpenNode.o"
 	@echo "... src/SharpenNode.i"
 	@echo "... src/SharpenNode.s"

@@ -34,13 +34,17 @@ void ImageOutputNode::render() {
     ImNodes::EndNode();
 }
 
-
 cv::Mat ImageOutputNode::process(const std::vector<cv::Mat>& inputs) {
-    if (inputs.empty() || inputs[0].empty()) return {};
+    if (inputs.empty() || inputs[0].empty()) {
+        std::cout << "[DEBUG] No valid input image received in ImageOutputNode." << std::endl;
+        return {};
+    }
 
-    lastImage = inputs[0];
+    lastImage = inputs[0];  // Set the first image as the output
+    std::cout << "[DEBUG] Image received in ImageOutputNode, size: " 
+              << lastImage.size() << std::endl;
 
-    // Convert BGR to RGB
+    // Convert to RGB for OpenGL compatibility
     cv::Mat rgb;
     cv::cvtColor(lastImage, rgb, cv::COLOR_BGR2RGB);
 
@@ -53,5 +57,6 @@ cv::Mat ImageOutputNode::process(const std::vector<cv::Mat>& inputs) {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, rgb.cols, rgb.rows, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb.data);
     glBindTexture(GL_TEXTURE_2D, 0);
 
-    return lastImage;
+    return lastImage;  // Return the processed image
 }
+

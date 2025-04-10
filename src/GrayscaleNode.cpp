@@ -64,4 +64,3 @@ cv::Mat GrayscaleNode::process(const std::vector<cv::Mat>& inputs) {
 
     return blended;
 }
-
