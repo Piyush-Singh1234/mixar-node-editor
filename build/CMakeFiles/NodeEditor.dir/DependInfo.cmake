@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.cpp" "CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/BlurNode.cpp" "CMakeFiles/NodeEditor.dir/src/BlurNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/BlurNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/BrightnessNode.cpp" "CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.o.d"
+  "/home/piyush/mixar-node-editor/mixar-node-editor/src/ColorChannelMergerNode.cpp" "CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ColorChannelSplitterNode.cpp" "CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ContrastNode.cpp" "CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/GrayscaleNode.cpp" "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o.d"

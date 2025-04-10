@@ -1,15 +1,16 @@
 #pragma once
 #include "Node.h"
+#include <opencv2/opencv.hpp>
+#include <vector>
 
 class ColorChannelSplitterNode : public Node {
 public:
-    cv::Mat r, g, b;
+    explicit ColorChannelSplitterNode(int id_);
 
-    explicit ColorChannelSplitterNode(int id_) : Node(id_) {}
     void render() override;
-    cv::Mat process(const std::vector<cv::Mat>& inputs) override;
+    cv::Mat process(const std::vector<cv::Mat>& inputs) override;  // required override
+    std::vector<cv::Mat> getChannelOutputs(const std::vector<cv::Mat>& inputs);
 
-    int getOutputAttrR() const { return id * 10 + 2; }
-    int getOutputAttrG() const { return id * 10 + 3; }
-    int getOutputAttrB() const { return id * 10 + 4; }
+private:
+    bool outputGrayscale;
 };
