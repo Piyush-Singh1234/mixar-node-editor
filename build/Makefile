@@ -369,6 +369,30 @@ src/BrightnessNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.s
 .PHONY : src/BrightnessNode.cpp.s
 
+src/ColorChannelSplitterNode.o: src/ColorChannelSplitterNode.cpp.o
+.PHONY : src/ColorChannelSplitterNode.o
+
+# target to build an object file
+src/ColorChannelSplitterNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o
+.PHONY : src/ColorChannelSplitterNode.cpp.o
+
+src/ColorChannelSplitterNode.i: src/ColorChannelSplitterNode.cpp.i
+.PHONY : src/ColorChannelSplitterNode.i
+
+# target to preprocess a source file
+src/ColorChannelSplitterNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.i
+.PHONY : src/ColorChannelSplitterNode.cpp.i
+
+src/ColorChannelSplitterNode.s: src/ColorChannelSplitterNode.cpp.s
+.PHONY : src/ColorChannelSplitterNode.s
+
+# target to generate assembly for a file
+src/ColorChannelSplitterNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.s
+.PHONY : src/ColorChannelSplitterNode.cpp.s
+
 src/ContrastNode.o: src/ContrastNode.cpp.o
 .PHONY : src/ContrastNode.o
 
@@ -513,29 +537,29 @@ src/NodeGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s
 .PHONY : src/NodeGraph.cpp.s
 
-src/RotateNode.o: src/RotateNode.cpp.o
-.PHONY : src/RotateNode.o
+src/RotatNode.o: src/RotatNode.cpp.o
+.PHONY : src/RotatNode.o
 
 # target to build an object file
-src/RotateNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o
-.PHONY : src/RotateNode.cpp.o
+src/RotatNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.o
+.PHONY : src/RotatNode.cpp.o
 
-src/RotateNode.i: src/RotateNode.cpp.i
-.PHONY : src/RotateNode.i
+src/RotatNode.i: src/RotatNode.cpp.i
+.PHONY : src/RotatNode.i
 
 # target to preprocess a source file
-src/RotateNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.i
-.PHONY : src/RotateNode.cpp.i
+src/RotatNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.i
+.PHONY : src/RotatNode.cpp.i
 
-src/RotateNode.s: src/RotateNode.cpp.s
-.PHONY : src/RotateNode.s
+src/RotatNode.s: src/RotatNode.cpp.s
+.PHONY : src/RotatNode.s
 
 # target to generate assembly for a file
-src/RotateNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.s
-.PHONY : src/RotateNode.cpp.s
+src/RotatNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/RotatNode.cpp.s
+.PHONY : src/RotatNode.cpp.s
 
 src/SharpenNode.o: src/SharpenNode.cpp.o
 .PHONY : src/SharpenNode.o
@@ -648,6 +672,9 @@ help:
 	@echo "... src/BrightnessNode.o"
 	@echo "... src/BrightnessNode.i"
 	@echo "... src/BrightnessNode.s"
+	@echo "... src/ColorChannelSplitterNode.o"
+	@echo "... src/ColorChannelSplitterNode.i"
+	@echo "... src/ColorChannelSplitterNode.s"
 	@echo "... src/ContrastNode.o"
 	@echo "... src/ContrastNode.i"
 	@echo "... src/ContrastNode.s"
@@ -666,9 +693,9 @@ help:
 	@echo "... src/NodeGraph.o"
 	@echo "... src/NodeGraph.i"
 	@echo "... src/NodeGraph.s"
-	@echo "... src/RotateNode.o"
-	@echo "... src/RotateNode.i"
-	@echo "... src/RotateNode.s"
+	@echo "... src/RotatNode.o"
+	@echo "... src/RotatNode.i"
+	@echo "... src/RotatNode.s"
 	@echo "... src/SharpenNode.o"
 	@echo "... src/SharpenNode.i"
 	@echo "... src/SharpenNode.s"

@@ -19,6 +19,7 @@
 #include "SharpenNode.h"
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
+#include "ColorChannelSplitterNode.h"
 #include "InvertNode.h"
 #include "ImageOutputNode.h"
 
@@ -93,6 +94,9 @@ int main() {
                 if (ImGui::MenuItem("Rotate Node")) {
                     nodes.push_back(std::make_unique<RotateNode>(id_counter++));
                 }  
+                if (ImGui::MenuItem("Color Channel Splitter")) {
+                    nodes.push_back(std::make_unique<ColorChannelSplitterNode>(id_counter++));
+                } 
                 if (ImGui::MenuItem("Threshold Node")) {
                     nodes.push_back(std::make_unique<ThresholdNode>(id_counter++));
                 }   
@@ -175,6 +179,15 @@ int main() {
                 if (attributeOutputs.count(sourceOutputAttr)) {
                     inputs.push_back(attributeOutputs[sourceOutputAttr]);
                 }
+            }
+
+            // 🔧 Special case for ChannelSplitterNode
+            if (auto* splitter = dynamic_cast<ColorChannelSplitterNode*>(node.get())) {
+                splitter->process(inputs);
+                attributeOutputs[splitter->getOutputAttrR()] = splitter->r;
+                attributeOutputs[splitter->getOutputAttrG()] = splitter->g;
+                attributeOutputs[splitter->getOutputAttrB()] = splitter->b;
+                continue;
             }
 
             // 🚀 Process node

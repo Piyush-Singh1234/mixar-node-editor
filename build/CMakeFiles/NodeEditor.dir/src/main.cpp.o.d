@@ -367,5 +367,6 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/SharpenNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/BrightnessNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/ContrastNode.h \
+ /home/piyush/mixar-node-editor/mixar-node-editor/include/ColorChannelSplitterNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/InvertNode.h \
  /home/piyush/mixar-node-editor/mixar-node-editor/include/ImageOutputNode.h
