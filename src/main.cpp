@@ -15,6 +15,7 @@
 #include "GrayscaleNode.h"
 #include "BlurNode.h"
 #include "RotateNode.h"
+#include "EdgeDetectionNode.h"
 #include "ThresholdNode.h"
 #include "SharpenNode.h"
 #include "BrightnessNode.h"
@@ -100,6 +101,9 @@ int main() {
                 } 
                 if (ImGui::MenuItem("Color Channel Merger")) {
                     nodes.push_back(std::make_unique<ColorChannelMergerNode>(id_counter++));
+                }                
+                if (ImGui::MenuItem("Edge Detection Node")) {
+                    nodes.push_back(std::make_unique<EdgeDetectionNode>(id_counter++));
                 }                
                 if (ImGui::MenuItem("Threshold Node")) {
                     nodes.push_back(std::make_unique<ThresholdNode>(id_counter++));

@@ -441,6 +441,30 @@ src/ContrastNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.s
 .PHONY : src/ContrastNode.cpp.s
 
+src/EdgeDetectionNode.o: src/EdgeDetectionNode.cpp.o
+.PHONY : src/EdgeDetectionNode.o
+
+# target to build an object file
+src/EdgeDetectionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o
+.PHONY : src/EdgeDetectionNode.cpp.o
+
+src/EdgeDetectionNode.i: src/EdgeDetectionNode.cpp.i
+.PHONY : src/EdgeDetectionNode.i
+
+# target to preprocess a source file
+src/EdgeDetectionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.i
+.PHONY : src/EdgeDetectionNode.cpp.i
+
+src/EdgeDetectionNode.s: src/EdgeDetectionNode.cpp.s
+.PHONY : src/EdgeDetectionNode.s
+
+# target to generate assembly for a file
+src/EdgeDetectionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.s
+.PHONY : src/EdgeDetectionNode.cpp.s
+
 src/GrayscaleNode.o: src/GrayscaleNode.cpp.o
 .PHONY : src/GrayscaleNode.o
 
@@ -705,6 +729,9 @@ help:
 	@echo "... src/ContrastNode.o"
 	@echo "... src/ContrastNode.i"
 	@echo "... src/ContrastNode.s"
+	@echo "... src/EdgeDetectionNode.o"
+	@echo "... src/EdgeDetectionNode.i"
+	@echo "... src/EdgeDetectionNode.s"
 	@echo "... src/GrayscaleNode.o"
 	@echo "... src/GrayscaleNode.i"
 	@echo "... src/GrayscaleNode.s"

@@ -3524,6 +3524,9 @@ CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o: /home/piyush/mixar-node-editor
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h
 
+CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/EdgeDetectionNode.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/GrayscaleNode.cpp \
   /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imconfig.h \
   /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.h \
@@ -8254,6 +8257,8 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.o: /home/piyush/mixar-node-editor/mixar-n
 /usr/include/c++/13/bits/memory_resource.h:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/home/piyush/mixar-node-editor/mixar-node-editor/src/EdgeDetectionNode.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
