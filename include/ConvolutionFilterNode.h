@@ -2,6 +2,7 @@
 #include "Node.h"
 #include <opencv2/opencv.hpp>
 #include <array>
+#include <map>
 
 class ConvolutionFilterNode : public Node {
 public:
@@ -15,7 +16,7 @@ public:
 private:
     KernelSize kernelSize = KernelSize::SIZE_3x3;
     FilterPreset currentPreset = FilterPreset::CUSTOM;
-    std::array<std::array<float, 5>, 5> kernel; // Supports up to 5x5
+    std::array<std::array<float, 5>, 5> kernel;
     cv::Mat previewImage;
     bool previewDirty = true;
 

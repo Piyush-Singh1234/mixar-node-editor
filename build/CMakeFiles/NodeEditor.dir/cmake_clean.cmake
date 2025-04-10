@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o.d"
+  "CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o"
+  "CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o"

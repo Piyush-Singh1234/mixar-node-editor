@@ -14,6 +14,7 @@
 #include "ImageInputNode.h"
 #include "GrayscaleNode.h"
 #include "NoiseGenerationNode.h"
+#include "ConvolutionFilterNode.h"
 #include "BlurNode.h"
 #include "BlendNode.h"
 #include "RotateNode.h"
@@ -97,7 +98,10 @@ int main() {
                 }                                
                 if (ImGui::MenuItem("Blend Node")) {
                     nodes.push_back(std::make_unique<BlendNode>(id_counter++));
-                }               
+                }          
+                if (ImGui::MenuItem("Convolution Filter")) {
+                    nodes.push_back(std::make_unique<ConvolutionFilterNode>(id_counter++));
+                }     
                 if (ImGui::MenuItem("Grayscale Node")) {
                     nodes.push_back(std::make_unique<GrayscaleNode>(id_counter++));
                 }

@@ -465,6 +465,30 @@ src/ContrastNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.s
 .PHONY : src/ContrastNode.cpp.s
 
+src/ConvolutionFilterNode.o: src/ConvolutionFilterNode.cpp.o
+.PHONY : src/ConvolutionFilterNode.o
+
+# target to build an object file
+src/ConvolutionFilterNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o
+.PHONY : src/ConvolutionFilterNode.cpp.o
+
+src/ConvolutionFilterNode.i: src/ConvolutionFilterNode.cpp.i
+.PHONY : src/ConvolutionFilterNode.i
+
+# target to preprocess a source file
+src/ConvolutionFilterNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.i
+.PHONY : src/ConvolutionFilterNode.cpp.i
+
+src/ConvolutionFilterNode.s: src/ConvolutionFilterNode.cpp.s
+.PHONY : src/ConvolutionFilterNode.s
+
+# target to generate assembly for a file
+src/ConvolutionFilterNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.s
+.PHONY : src/ConvolutionFilterNode.cpp.s
+
 src/EdgeDetectionNode.o: src/EdgeDetectionNode.cpp.o
 .PHONY : src/EdgeDetectionNode.o
 
@@ -780,6 +804,9 @@ help:
 	@echo "... src/ContrastNode.o"
 	@echo "... src/ContrastNode.i"
 	@echo "... src/ContrastNode.s"
+	@echo "... src/ConvolutionFilterNode.o"
+	@echo "... src/ConvolutionFilterNode.i"
+	@echo "... src/ConvolutionFilterNode.s"
 	@echo "... src/EdgeDetectionNode.o"
 	@echo "... src/EdgeDetectionNode.i"
 	@echo "... src/EdgeDetectionNode.s"
