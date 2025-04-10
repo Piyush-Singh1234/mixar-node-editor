@@ -12,3 +12,4 @@ public:
     void render() override;
     cv::Mat process(const std::vector<cv::Mat>& inputs) override;
 };
+
