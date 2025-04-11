@@ -49,6 +49,7 @@ add_executable(NodeEditor
     ${IMNODES_SOURCES}
 )
 target_include_directories(NodeEditor PRIVATE include)
+target_include_directories(NodeEditor PRIVATE include/nlohmann)
 
 # ---- Link Everything ----
 target_link_libraries(NodeEditor

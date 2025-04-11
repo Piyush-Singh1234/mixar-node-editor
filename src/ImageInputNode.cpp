@@ -6,6 +6,8 @@
 #include <iostream>
 #include <sstream>
 #include <algorithm>
+#include <filesystem>
+namespace fs = std::filesystem;
 
 
 ImageInputNode::ImageInputNode(int id_) : Node(id_) {}
