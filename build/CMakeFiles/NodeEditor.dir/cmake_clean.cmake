@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o.d"
+  "CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o"
+  "CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o"

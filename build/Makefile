@@ -537,6 +537,30 @@ src/GrayscaleNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.s
 .PHONY : src/GrayscaleNode.cpp.s
 
+src/ImGuiFileDialog.o: src/ImGuiFileDialog.cpp.o
+.PHONY : src/ImGuiFileDialog.o
+
+# target to build an object file
+src/ImGuiFileDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o
+.PHONY : src/ImGuiFileDialog.cpp.o
+
+src/ImGuiFileDialog.i: src/ImGuiFileDialog.cpp.i
+.PHONY : src/ImGuiFileDialog.i
+
+# target to preprocess a source file
+src/ImGuiFileDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.i
+.PHONY : src/ImGuiFileDialog.cpp.i
+
+src/ImGuiFileDialog.s: src/ImGuiFileDialog.cpp.s
+.PHONY : src/ImGuiFileDialog.s
+
+# target to generate assembly for a file
+src/ImGuiFileDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.s
+.PHONY : src/ImGuiFileDialog.cpp.s
+
 src/ImageInputNode.o: src/ImageInputNode.cpp.o
 .PHONY : src/ImageInputNode.o
 
@@ -813,6 +837,9 @@ help:
 	@echo "... src/GrayscaleNode.o"
 	@echo "... src/GrayscaleNode.i"
 	@echo "... src/GrayscaleNode.s"
+	@echo "... src/ImGuiFileDialog.o"
+	@echo "... src/ImGuiFileDialog.i"
+	@echo "... src/ImGuiFileDialog.s"
 	@echo "... src/ImageInputNode.o"
 	@echo "... src/ImageInputNode.i"
 	@echo "... src/ImageInputNode.s"

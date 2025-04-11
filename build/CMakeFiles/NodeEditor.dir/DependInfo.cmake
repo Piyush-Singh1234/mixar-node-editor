@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ConvolutionFilterNode.cpp" "CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/EdgeDetectionNode.cpp" "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/GrayscaleNode.cpp" "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o.d"
+  "/home/piyush/mixar-node-editor/mixar-node-editor/src/ImGuiFileDialog.cpp" "CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ImageInputNode.cpp" "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/ImageOutputNode.cpp" "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o.d"
   "/home/piyush/mixar-node-editor/mixar-node-editor/src/InvertNode.cpp" "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o" "gcc" "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o.d"

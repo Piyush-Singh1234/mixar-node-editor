@@ -6,6 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 # ---- Source Files ----
 file(GLOB SOURCES src/*.cpp)
 
+# ---- ImGuiFileDialog Sources ----
+# Assuming you placed ImGuiFileDialog.cpp in the src folder;
+# if located elsewhere, adjust the path accordingly.
+file(GLOB IMGUIFILEDIALOG_SOURCES src/ImGuiFileDialog.cpp)
+
 # ---- Include Directories ----
 include_directories(
     imgui
@@ -39,6 +44,7 @@ file(GLOB IMNODES_SOURCES
 # ---- Build Executable ----
 add_executable(NodeEditor
     ${SOURCES}
+    ${IMGUIFILEDIALOG_SOURCES}
     ${IMGUI_SOURCES}
     ${IMNODES_SOURCES}
 )
@@ -52,3 +58,4 @@ target_link_libraries(NodeEditor
     OpenGL::GL
     dl
 )
+

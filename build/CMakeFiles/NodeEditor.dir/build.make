@@ -195,10 +195,24 @@ CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piyush/mixar-node-editor/mixar-node-editor/src/GrayscaleNode.cpp -o CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.s
 
+CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
+CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/ImGuiFileDialog.cpp
+CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o -MF CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/ImGuiFileDialog.cpp
+
+CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piyush/mixar-node-editor/mixar-node-editor/src/ImGuiFileDialog.cpp > CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.i
+
+CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piyush/mixar-node-editor/mixar-node-editor/src/ImGuiFileDialog.cpp -o CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.s
+
 CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/ImageInputNode.cpp
 CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/ImageInputNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/ImageOutputNode.cpp
 CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/ImageOutputNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/InvertNode.cpp
 CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/InvertNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/NodeGraph.cpp
 CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o -MF CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/NodeGraph.cpp
 
 CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/NodeEditor.dir/src/NodeGraph.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/NoiseGenerationNode.cpp
 CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/NoiseGenerationNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/NodeEditor.dir/src/NoiseGenerationNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/RotateNode.cpp
 CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/RotateNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/NodeEditor.dir/src/RotateNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/SharpenNode.cpp
 CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/SharpenNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/NodeEditor.dir/src/SharpenNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/ThresholdNode.cpp
 CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o -MF CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/ThresholdNode.cpp
 
 CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/NodeEditor.dir/src/ThresholdNode.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/src/main.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/src/main.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/src/main.cpp
 CMakeFiles/NodeEditor.dir/src/main.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/NodeEditor.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/NodeEditor.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/src/main.cpp.o -MF CMakeFiles/NodeEditor.dir/src/main.cpp.o.d -o CMakeFiles/NodeEditor.dir/src/main.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/src/main.cpp
 
 CMakeFiles/NodeEditor.dir/src/main.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/NodeEditor.dir/src/main.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/NodeEditor.dir/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.cpp
 CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_demo.cpp
 CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_demo.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_draw.cpp
 CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_draw.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_tables.cpp
 CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_tables.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_widgets.cpp
 CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imgui/imgui_widgets.cpp
 
 CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/NodeEditor.dir/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o: CMakeFiles/NodeEditor.dir/flags.make
 CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o: /home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.cpp
 CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o: CMakeFiles/NodeEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o -MF CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o.d -o CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.o -c /home/piyush/mixar-node-editor/mixar-node-editor/imnodes/imnodes.cpp
 
 CMakeFiles/NodeEditor.dir/imnodes/imnodes.cpp.i: cmake_force
@@ -444,6 +458,7 @@ NodeEditor_OBJECTS = \
 "CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o" \
 "CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o" \
 "CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o" \
+"CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o" \
 "CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o" \
 "CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o" \
 "CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o" \
@@ -474,6 +489,7 @@ NodeEditor: CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/ConvolutionFilterNode.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/EdgeDetectionNode.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/GrayscaleNode.cpp.o
+NodeEditor: CMakeFiles/NodeEditor.dir/src/ImGuiFileDialog.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/ImageInputNode.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/ImageOutputNode.cpp.o
 NodeEditor: CMakeFiles/NodeEditor.dir/src/InvertNode.cpp.o
@@ -551,7 +567,7 @@ NodeEditor: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 NodeEditor: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 NodeEditor: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 NodeEditor: CMakeFiles/NodeEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable NodeEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable NodeEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NodeEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
