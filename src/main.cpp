@@ -83,7 +83,7 @@ int main() {
     ImGui_ImplOpenGL3_Init("#version 330");
 
     ImNodes::CreateContext();
-    nodes.push_back(std::make_unique<ImageInputNode>(id_counter++));
+    // nodes.push_back(std::make_unique<ImageInputNode>(id_counter++));
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
@@ -130,30 +130,52 @@ int main() {
             links.push_back({link_id_counter++, start_attr, end_attr});
         }
 
+        // int hovered_node = -1;
+        // if (ImNodes::IsNodeHovered(&hovered_node) && ImGui::IsMouseDoubleClicked(0)) {
+        //     nodes.erase(std::remove_if(nodes.begin(), nodes.end(),
+        //         [hovered_node](const auto& node) { return node->getId() == hovered_node; }), nodes.end());
+
+        //     const int node_input = hovered_node * 10 + 1;
+        //     const int node_output = hovered_node * 10 + 2;
+        //     links.erase(std::remove_if(links.begin(), links.end(),
+        //         [node_input, node_output](const Link& link) {
+        //             return link.end_attr == node_input || link.start_attr == node_output;
+        //         }), links.end());
+        // }
+
+        // int hovered_link = -1;
+        // if (ImNodes::IsLinkHovered(&hovered_link) && ImGui::IsMouseDoubleClicked(0)) {
+        //     links.erase(std::remove_if(links.begin(), links.end(),
+        //         [hovered_link](const Link& link) { return link.id == hovered_link; }), links.end());
+        // }
+        // Modified node deletion logic
         int hovered_node = -1;
         if (ImNodes::IsNodeHovered(&hovered_node) && ImGui::IsMouseDoubleClicked(0)) {
-            nodes.erase(std::remove_if(nodes.begin(), nodes.end(),
-                [hovered_node](const auto& node) { return node->getId() == hovered_node; }), nodes.end());
+            auto node_it = std::find_if(nodes.begin(), nodes.end(),
+                [hovered_node](const auto& n) { return n->getId() == hovered_node; });
+            
+            if (node_it != nodes.end()) {
+                // Get ALL input/output attributes
+                std::vector<int> node_attrs = (*node_it)->getInputAttributes();
+                node_attrs.push_back((*node_it)->getOutputAttr());
 
-            const int node_input = hovered_node * 10 + 1;
-            const int node_output = hovered_node * 10 + 2;
-            links.erase(std::remove_if(links.begin(), links.end(),
-                [node_input, node_output](const Link& link) {
-                    return link.end_attr == node_input || link.start_attr == node_output;
-                }), links.end());
+                // Remove connected links
+                links.erase(std::remove_if(links.begin(), links.end(),
+                    [&node_attrs](const Link& link) {
+                        return std::find(node_attrs.begin(), node_attrs.end(), link.start_attr) != node_attrs.end() ||
+                            std::find(node_attrs.begin(), node_attrs.end(), link.end_attr) != node_attrs.end();
+                    }), links.end());
+
+                // Remove the node
+                nodes.erase(node_it);
+            }
         }
 
-        int hovered_link = -1;
-        if (ImNodes::IsLinkHovered(&hovered_link) && ImGui::IsMouseDoubleClicked(0)) {
-            links.erase(std::remove_if(links.begin(), links.end(),
-                [hovered_link](const Link& link) { return link.id == hovered_link; }), links.end());
-        }
 
         ImGui::EndChild();
         ImGui::End();
 
 
-        // THEN REPLACE THE DELETED CODE WITH:
         std::unordered_map<int, std::vector<int>> adjacency_list;
         std::unordered_map<int, int> in_degree;
 
@@ -197,15 +219,33 @@ int main() {
             Node* node = it->get();
             std::vector<cv::Mat> inputs;
 
-            // Collect inputs from connected nodes
-            for (const auto& link : links) {
-                if (link.end_attr == node->getInputAttr()) {
-                    inputs.push_back(attributeOutputs[link.start_attr]);
+            // Collect inputs from all connected attributes
+            for (int input_attr : node->getInputAttributes()) { // Get ALL input attributes
+                for (const auto& link : links) { // Check all links
+                    if (link.end_attr == input_attr) { // Match attribute ID
+                        inputs.push_back(attributeOutputs[link.start_attr]); // Fetch output from connected node
+                    }
                 }
             }
 
+
             cv::Mat output = node->process(inputs);
             attributeOutputs[node->getOutputAttr()] = output;
+        }
+
+        std::cout << "\n=== Processing Order ===";
+        for (int node_id : processing_order) {
+            auto node_it = std::find_if(nodes.begin(), nodes.end(),
+                [node_id](const auto& n) { return n->getId() == node_id; });
+            if (node_it != nodes.end()) {
+                std::cout << "\nNode " << node_id << " (" << (*node_it)->name << ")";
+                std::cout << "\n  Output attr: " << (*node_it)->getOutputAttr();
+            }
+        }
+
+        std::cout << "\n\n=== Links ===";
+        for (const auto& link : links) {
+            std::cout << "\nLink " << link.id << ": " << link.start_attr << " → " << link.end_attr;
         }
 
         ImGui::Render();

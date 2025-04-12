@@ -19,33 +19,33 @@ void ImageInputNode::render() {
     ImNodes::EndNodeTitleBar();
 
     // Path input
-    static char buffer[256];
+    // static char buffer[256];
     strncpy(buffer, path.c_str(), sizeof(buffer));
     
     // ✅ Check if Enter is pressed after typing path
-    // if (ImGui::InputText("Image Path", buffer, sizeof(buffer), ImGuiInputTextFlags_EnterReturnsTrue)) {
-    //     path = std::string(buffer);
+    if (ImGui::InputText("Image Path", buffer, sizeof(buffer), ImGuiInputTextFlags_EnterReturnsTrue)) {
+        path = std::string(buffer);
         
-    //     // Validate file extension (basic check)
-    //     std::string ext = "";
-    //     auto pos = path.find_last_of(".");
-    //     if (pos != std::string::npos)
-    //         ext = path.substr(pos);
-    //     std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);  // normalize extension
+        // Validate file extension (basic check)
+        std::string ext = "";
+        auto pos = path.find_last_of(".");
+        if (pos != std::string::npos)
+            ext = path.substr(pos);
+        std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);  // normalize extension
 
-    //     if(ext != ".jpg" && ext != ".jpeg" && ext != ".png" && ext != ".bmp") {
-    //         std::cout << "[❌] Unsupported file format: " << ext << std::endl;
-    //         image.release();
-    //     } else {
-    //         image = cv::imread(path);
-    //         if (image.empty()) {
-    //             std::cout << "[❌] Failed to load image at: " << path << std::endl;
-    //         } else {
-    //             std::cout << "[✅] Loaded image: " << path
-    //                       << " (" << image.cols << "x" << image.rows << ")\n";
-    //         }
-    //     }
-    // }
+        if(ext != ".jpg" && ext != ".jpeg" && ext != ".png" && ext != ".bmp") {
+            std::cout << "[❌] Unsupported file format: " << ext << std::endl;
+            image.release();
+        } else {
+            image = cv::imread(path);
+            if (image.empty()) {
+                std::cout << "[❌] Failed to load image at: " << path << std::endl;
+            } else {
+                std::cout << "[✅] Loaded image: " << path
+                          << " (" << image.cols << "x" << image.rows << ")\n";
+            }
+        }
+    }
     if (ImGui::Button("Browse")) {
         // Use an empty default config instead of "."
         ImGuiFileDialog::Instance()->OpenDialog("ChooseFileDlgKey", "Choose Image", ".png,.jpg,.jpeg,.bmp", {});

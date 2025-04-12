@@ -59,4 +59,3 @@ cv::Mat ImageOutputNode::process(const std::vector<cv::Mat>& inputs) {
 
     return lastImage;  // Return the processed image
 }
-

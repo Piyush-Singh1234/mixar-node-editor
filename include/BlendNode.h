@@ -21,6 +21,12 @@ public:
 
     void render() override;
     cv::Mat process(const std::vector<cv::Mat>& inputs) override;
+    bool validateInputs(const std::vector<cv::Mat>& inputs) const override {
+        return inputs.size() == 2 && !inputs[0].empty() && !inputs[1].empty();
+    }
+    std::vector<int> getInputAttributes() const override { 
+        return { id * 10 + 1, id * 10 + 2 }; 
+    }
 
     // Override to match the output attribute used in render()
     int getOutputAttr() const override { return id * 10 + 3; }
