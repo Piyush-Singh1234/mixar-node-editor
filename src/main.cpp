@@ -21,7 +21,6 @@
 #include "BrightnessNode.h"
 #include "ContrastNode.h"
 #include "ColorChannelSplitterNode.h"
-#include "ColorChannelMergerNode.h"
 #include "InvertNode.h"
 #include "ImageOutputNode.h"
 
@@ -110,7 +109,6 @@ int main() {
                 if (ImGui::MenuItem("Brightness Node")) nodes.push_back(std::make_unique<BrightnessNode>(id_counter++));
                 if (ImGui::MenuItem("Contrast Node")) nodes.push_back(std::make_unique<ContrastNode>(id_counter++));
                 if (ImGui::MenuItem("Color Splitter Node")) nodes.push_back(std::make_unique<ColorChannelSplitterNode>(id_counter++));
-                if (ImGui::MenuItem("Color Merger Node")) nodes.push_back(std::make_unique<ColorChannelMergerNode>(id_counter++));
                 if (ImGui::MenuItem("Invert Node")) nodes.push_back(std::make_unique<InvertNode>(id_counter++));
                 if (ImGui::MenuItem("Output Node")) nodes.push_back(std::make_unique<ImageOutputNode>(id_counter++));
                 ImGui::EndMenu();
@@ -130,24 +128,6 @@ int main() {
             links.push_back({link_id_counter++, start_attr, end_attr});
         }
 
-        // int hovered_node = -1;
-        // if (ImNodes::IsNodeHovered(&hovered_node) && ImGui::IsMouseDoubleClicked(0)) {
-        //     nodes.erase(std::remove_if(nodes.begin(), nodes.end(),
-        //         [hovered_node](const auto& node) { return node->getId() == hovered_node; }), nodes.end());
-
-        //     const int node_input = hovered_node * 10 + 1;
-        //     const int node_output = hovered_node * 10 + 2;
-        //     links.erase(std::remove_if(links.begin(), links.end(),
-        //         [node_input, node_output](const Link& link) {
-        //             return link.end_attr == node_input || link.start_attr == node_output;
-        //         }), links.end());
-        // }
-
-        // int hovered_link = -1;
-        // if (ImNodes::IsLinkHovered(&hovered_link) && ImGui::IsMouseDoubleClicked(0)) {
-        //     links.erase(std::remove_if(links.begin(), links.end(),
-        //         [hovered_link](const Link& link) { return link.id == hovered_link; }), links.end());
-        // }
         // Modified node deletion logic
         int hovered_node = -1;
         if (ImNodes::IsNodeHovered(&hovered_node) && ImGui::IsMouseDoubleClicked(0)) {
@@ -230,7 +210,18 @@ int main() {
 
 
             cv::Mat output = node->process(inputs);
-            attributeOutputs[node->getOutputAttr()] = output;
+            // attributeOutputs[node->getOutputAttr()] = output;
+            auto* splitter = dynamic_cast<ColorChannelSplitterNode*>(node);
+            if (splitter) {
+                splitter->process(inputs); // Updates internal outputs
+                for (int attr : splitter->getOutputAttrs()) {
+                    attributeOutputs[attr] = splitter->getOutputByAttr(attr);
+                }
+            } else {
+                cv::Mat output = node->process(inputs);
+                attributeOutputs[node->getOutputAttr()] = output;
+            }
+
         }
 
         std::cout << "\n=== Processing Order ===";

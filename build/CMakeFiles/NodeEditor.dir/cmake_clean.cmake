@@ -21,8 +21,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeEditor.dir/src/BlurNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.o.d"
-  "CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.o"
-  "CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o"
   "CMakeFiles/NodeEditor.dir/src/ColorChannelSplitterNode.cpp.o.d"
   "CMakeFiles/NodeEditor.dir/src/ContrastNode.cpp.o"

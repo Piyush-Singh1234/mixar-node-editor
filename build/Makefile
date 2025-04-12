@@ -393,30 +393,6 @@ src/BrightnessNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/BrightnessNode.cpp.s
 .PHONY : src/BrightnessNode.cpp.s
 
-src/ColorChannelMergerNode.o: src/ColorChannelMergerNode.cpp.o
-.PHONY : src/ColorChannelMergerNode.o
-
-# target to build an object file
-src/ColorChannelMergerNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.o
-.PHONY : src/ColorChannelMergerNode.cpp.o
-
-src/ColorChannelMergerNode.i: src/ColorChannelMergerNode.cpp.i
-.PHONY : src/ColorChannelMergerNode.i
-
-# target to preprocess a source file
-src/ColorChannelMergerNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.i
-.PHONY : src/ColorChannelMergerNode.cpp.i
-
-src/ColorChannelMergerNode.s: src/ColorChannelMergerNode.cpp.s
-.PHONY : src/ColorChannelMergerNode.s
-
-# target to generate assembly for a file
-src/ColorChannelMergerNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeEditor.dir/build.make CMakeFiles/NodeEditor.dir/src/ColorChannelMergerNode.cpp.s
-.PHONY : src/ColorChannelMergerNode.cpp.s
-
 src/ColorChannelSplitterNode.o: src/ColorChannelSplitterNode.cpp.o
 .PHONY : src/ColorChannelSplitterNode.o
 
@@ -819,9 +795,6 @@ help:
 	@echo "... src/BrightnessNode.o"
 	@echo "... src/BrightnessNode.i"
 	@echo "... src/BrightnessNode.s"
-	@echo "... src/ColorChannelMergerNode.o"
-	@echo "... src/ColorChannelMergerNode.i"
-	@echo "... src/ColorChannelMergerNode.s"
 	@echo "... src/ColorChannelSplitterNode.o"
 	@echo "... src/ColorChannelSplitterNode.i"
 	@echo "... src/ColorChannelSplitterNode.s"
