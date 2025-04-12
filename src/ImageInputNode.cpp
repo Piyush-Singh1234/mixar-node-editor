@@ -47,7 +47,7 @@ void ImageInputNode::render() {
         }
     }
     if (ImGui::Button("Browse")) {
-        // Use an empty default config instead of "."
+        
         ImGuiFileDialog::Instance()->OpenDialog("ChooseFileDlgKey", "Choose Image", ".png,.jpg,.jpeg,.bmp", {});
     }
     if (ImGuiFileDialog::Instance()->Display("ChooseFileDlgKey")) {
