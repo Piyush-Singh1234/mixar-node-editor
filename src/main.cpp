@@ -82,7 +82,6 @@ int main() {
     ImGui_ImplOpenGL3_Init("#version 330");
 
     ImNodes::CreateContext();
-    // nodes.push_back(std::make_unique<ImageInputNode>(id_counter++));
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
@@ -210,7 +209,6 @@ int main() {
 
 
             cv::Mat output = node->process(inputs);
-            // attributeOutputs[node->getOutputAttr()] = output;
             auto* splitter = dynamic_cast<ColorChannelSplitterNode*>(node);
             if (splitter) {
                 splitter->process(inputs); // Updates internal outputs
