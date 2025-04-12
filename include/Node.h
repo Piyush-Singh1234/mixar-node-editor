@@ -14,7 +14,7 @@ public:
     virtual void render() = 0;
     virtual cv::Mat process(const std::vector<cv::Mat>& inputs) = 0;
 
-    // Fixed: Add missing getInputAttr() declaration
+
     virtual int getInputAttr() const { return id * 10 + 1; }
     virtual bool validateInputs(const std::vector<cv::Mat>& inputs) const {
         return !inputs.empty();
