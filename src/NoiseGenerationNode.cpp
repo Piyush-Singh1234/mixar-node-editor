@@ -91,7 +91,7 @@ cv::Mat NoiseGenerationNode::process(const std::vector<cv::Mat>& inputs) {
     return output;
 }
 
-// Revised Perlin noise implementation
+//  Perlin noise implementation
 void NoiseGenerationNode::generatePerlinNoise(cv::Mat& output, const cv::Size& size) {
     if (size.width <= 0 || size.height <= 0) {
         throw std::invalid_argument("Invalid size for Perlin noise");
@@ -127,6 +127,7 @@ void NoiseGenerationNode::generatePerlinNoise(cv::Mat& output, const cv::Size& s
     cv::normalize(output, output, 0, 1, cv::NORM_MINMAX);
 }
 
+//  Simplex noise implementation
 void NoiseGenerationNode::generateSimplexNoise(cv::Mat& output, const cv::Size& size) {
     if (size.width <= 0 || size.height <= 0) {
         throw std::invalid_argument("Invalid size for Simplex noise");
@@ -147,6 +148,7 @@ void NoiseGenerationNode::generateSimplexNoise(cv::Mat& output, const cv::Size& 
     }
 }
 
+//  Worley noise implementation
 void NoiseGenerationNode::generateWorleyNoise(cv::Mat& output, const cv::Size& size) {
     if (size.width <= 0 || size.height <= 0) {
         throw std::invalid_argument("Invalid size for Worley noise");
