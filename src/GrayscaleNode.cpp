@@ -4,22 +4,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-// void GrayscaleNode::render() {
-//     ImNodes::BeginNode(id);
-//     ImNodes::BeginNodeTitleBar();
-//     ImGui::Text("Grayscale Node");
-//     ImNodes::EndNodeTitleBar();
 
-//     ImNodes::BeginInputAttribute(id * 10 + 1);
-//     ImGui::Text("In");
-//     ImNodes::EndInputAttribute();
-
-//     ImNodes::BeginOutputAttribute(id * 10 + 2);
-//     ImGui::Text("Out");
-//     ImNodes::EndOutputAttribute();
-
-//     ImNodes::EndNode();
-// }
 void GrayscaleNode::render() {
     ImNodes::BeginNode(id);
     ImNodes::BeginNodeTitleBar();
@@ -41,14 +26,7 @@ void GrayscaleNode::render() {
 }
 
 
-// cv::Mat GrayscaleNode::process(const std::vector<cv::Mat>& inputs) {
-//     if (inputs.empty() || inputs[0].empty()) return {};
 
-//     cv::Mat gray, rgb;
-//     cv::cvtColor(inputs[0], gray, cv::COLOR_BGR2GRAY);
-//     cv::cvtColor(gray, rgb, cv::COLOR_GRAY2BGR);  // Convert back to 3-channel
-//     return rgb;
-// }
 cv::Mat GrayscaleNode::process(const std::vector<cv::Mat>& inputs) {
     if (inputs.empty() || inputs[0].empty()) return {};
 
