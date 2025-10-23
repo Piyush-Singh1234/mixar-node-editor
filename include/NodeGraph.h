@@ -1,22 +1,40 @@
-
 #pragma once
 
 #include <vector>
 #include <memory>
-#include <utility>
-#include "Node.h"
+#include <algorithm>
+#include "Node.h" 
+
+struct Link {
+    int id;
+    int start_attr;
+    int end_attr;
+};
 
 class NodeGraph {
 public:
-    void addNode(std::shared_ptr<Node> node);
+    NodeGraph() = default;
+
+    // --- Graph Modification Methods ---
+    template <typename T>
+    void addNode() {
+        nodes.push_back(std::make_unique<T>(next_node_id++));
+    }
+    
     void addLink(int start_attr, int end_attr);
+    void deleteNode(int node_id);
 
-    const std::vector<std::shared_ptr<Node>>& getNodes() const;
-    const std::vector<std::pair<int, int>>& getLinks() const;
+    // --- Core Processing ---
+    void process();
 
-    void processNodes();
+    // --- Data Access for Rendering ---
+    const std::vector<std::unique_ptr<Node>>& getNodes() const;
+    const std::vector<Link>& getLinks() const;
 
 private:
-    std::vector<std::shared_ptr<Node>> nodes;
-    std::vector<std::pair<int, int>> links;
+    std::vector<std::unique_ptr<Node>> nodes;
+    std::vector<Link> links;
+
+    int next_node_id = 1;
+    int next_link_id = 100;
 };

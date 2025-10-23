@@ -1,3 +1,0 @@
-/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles/NodeEditor.dir
-/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles/edit_cache.dir
-/home/piyush/mixar-node-editor/mixar-node-editor/build/CMakeFiles/rebuild_cache.dir

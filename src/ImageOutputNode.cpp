@@ -44,9 +44,9 @@ cv::Mat ImageOutputNode::process(const std::vector<cv::Mat>& inputs) {
     std::cout << "[DEBUG] Image received in ImageOutputNode, size: " 
               << lastImage.size() << std::endl;
 
-    // Convert to RGB for OpenGL compatibility
+    // Convert to RGB from BGR(OPenCV use BGR) for OpenGL compatibility
     cv::Mat rgb;
-    cv::cvtColor(lastImage, rgb, cv::COLOR_BGR2RGB);
+    cv::cvtColor(lastImage, rgb, cv::COLOR_BGR2RGB);dhante nana
 
     if (textureID == 0)
         glGenTextures(1, &textureID);
